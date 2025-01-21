@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Break the ice, deepen connections, and create memorable conversations with thoughtfully designed questions for every relationship and occasion.">
+    <meta name="keywords" content="conversation starter, relationships, communication, social interaction, ice breaker, conversation app">
+    <meta name="author" content="Andrei Sambra">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://talkingabout.app/">
+    <meta property="og:title" content="Talking About - Conversations that matter">
+    <meta property="og:description" content="Break the ice, deepen connections, and create memorable conversations with thoughtfully designed questions for every relationship and occasion.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://talkingabout.app/">
+    <meta property="twitter:title" content="Talking About - Conversations that matter">
+    <meta property="twitter:description" content="Break the ice, deepen connections, and create memorable conversations with thoughtfully designed questions for every relationship and occasion.">
+
     <title>Talking About</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Talking About",
+      "description": "Break the ice, deepen connections, and create memorable conversations with thoughtfully designed questions for every relationship and occasion.",
+      "operatingSystem": "iOS",
+      "author": {
+        "@type": "Person",
+        "name": "Andrei Sambra"
+      },
+      "applicationCategory": "Lifestyle",
+      "offers": {
+        "@type": "Offer",
+        "availability": "PreOrder",
+        "price": "0"
+      }
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -83,6 +123,7 @@
             flex-shrink: 0;
             width: 30vw;
             max-width: 320px;
+            border-radius: 12px;
             overflow: hidden;
         }
 
@@ -90,6 +131,14 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 4rem;
+            padding: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -142,31 +191,23 @@
             background: linear-gradient(90deg, #3b82f6, #10b981);
             z-index: 1000;
         }
-
-        .copyright {
-            text-align: center;
-            font-size: 0.875rem;
-            color: #666;
-            margin-top: 4rem;
-            padding: 1rem;
-        }
     </style>
 </head>
 <body>
-    <div class="gradient-bg"></div>
-    <div class="container">
+    <div class="gradient-bg" role="presentation"></div>
+    <main class="container">
         <div class="hero">
             <h1>Talking About</h1>
             <p class="subtitle">Conversations that matter.</p>
             <p class="description">
                 Break the ice, deepen connections, and create memorable conversations with thoughtfully designed questions for every relationship and occasion.
             </p>
-            <p class="availability">The app is in review and will be available soon on Apple App Store.</p>
+            <p class="availability">The app will be available soon on Apple App Store.</p>
         </div>
-        <div class="image-container">
-            <img src="images/05.png" alt="Talking About App Screenshot">
+        <div class="image-container" role="img" aria-label="Talking About App Screenshot">
+            <img src="/api/placeholder/320/480" alt="Talking About App Interface showing conversation prompts" loading="lazy">
         </div>
-    </div>
-    <div class="copyright">© 2025 Andrei Sambra</div>
+    </main>
+    <footer class="copyright">© 2025 Andrei Sambra</footer>
 </body>
 </html>
